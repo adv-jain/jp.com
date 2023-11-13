@@ -22,7 +22,55 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      property="stylesheet"
+      rel="stylesheet"
+      id="writer-font-google_fonts-css"
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;subset=latin,latin-ext&amp;display=swap"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+    />
+
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="min-vh-100 position-relative mw-100">
@@ -33,7 +81,7 @@
         muted
         loop
         src="videos/Sequence 01.mp4"
-        class="w-100 position-absolute top-0 start-0 end-0 bottom-0 z-n1"
+        class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 end-0 bottom-0 z-n1"
       ></video>
       <nav class="navbar navbar-expand-lg py-4" data-bs-theme="dark">
         <div class="container">
@@ -135,22 +183,263 @@
       </div>
     </header>
 
-    <!-- <main>
+    <main class="py-5 my-5">
       <section class="container">
-        <div>BLOG FEED</div>
-        <h2>Latest From the Blog</h2>
-        <div class="row">
-          <div class="col">
-            <div class="overflow-hidden">
+        <div class="text-center small section-title">BLOG FEED</div>
+        <h2 class="text-center display-4 fw-bold mb-5">Latest From the Blog</h2>
+        <!-- <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img
+              src="https://writer.ancorathemes.com/wp-content/uploads/2020/04/post-32-890x664.jpg"
+              alt=""
+            />
+            <a href="#"></a>
+            <div class="mt-4">
+              <div class="section-title">TREND</div>
+              <h5 class="mt-3">
+                Keeping yourself busy with literature trends in 2023
+              </h5>
+              <div
+                class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
+              >
+                <span>Oct 22, 2023</span>
+                <i class="fa-solid fa-circle"></i>
+                <span>3 Comments</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img
-                src="https://writer.ancorathemes.com/keeping-yourself-busy-with-literature-trends-in-2022/"
-                class="img-fluid img-hover"
+                class="img-fluid"
+                src="https://writer.ancorathemes.com/wp-content/uploads/2020/04/post-32-890x664.jpg"
                 alt=""
               />
+              <a href="#"></a>
+              <div class="mt-4">
+                <div class="section-title">TREND</div>
+                <h5 class="mt-3">
+                  Keeping yourself busy with literature trends in 2023
+                </h5>
+                <div
+                  class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
+                >
+                  <span>Oct 22, 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>3 Comments</span>
+                </div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <img
+                class="img-fluid"
+                src="https://writer.ancorathemes.com/wp-content/uploads/2020/04/post-32-890x664.jpg"
+                alt=""
+              />
+              <a href="#"></a>
+              <div class="mt-4">
+                <div class="section-title">TREND</div>
+                <h5 class="mt-3">
+                  Keeping yourself busy with literature trends in 2023
+                </h5>
+                <div
+                  class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
+                >
+                  <span>Oct 22, 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>3 Comments</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="img-fluid"
+                src="https://writer.ancorathemes.com/wp-content/uploads/2020/04/post-32-890x664.jpg"
+                alt=""
+              />
+              <a href="#"></a>
+              <div class="mt-4">
+                <div class="section-title">TREND</div>
+                <h5 class="mt-3">
+                  Keeping yourself busy with literature trends in 2023
+                </h5>
+                <div
+                  class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
+                >
+                  <span>Oct 22, 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>3 Comments</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="img-fluid"
+                src="https://writer.ancorathemes.com/wp-content/uploads/2020/04/post-32-890x664.jpg"
+                alt=""
+              />
+              <a href="#"></a>
+              <div class="mt-4">
+                <div class="section-title">TREND</div>
+                <h5 class="mt-3">
+                  Keeping yourself busy with literature trends in 2023
+                </h5>
+                <div
+                  class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
+                >
+                  <span>Oct 22, 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>3 Comments</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="img-fluid"
+                src="https://writer.ancorathemes.com/wp-content/uploads/2020/04/post-32-890x664.jpg"
+                alt=""
+              />
+              <a href="#"></a>
+              <div class="mt-4">
+                <div class="section-title">TREND</div>
+                <h5 class="mt-3">
+                  Keeping yourself busy with literature trends in 2023
+                </h5>
+                <div
+                  class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
+                >
+                  <span>Oct 22, 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>3 Comments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section
+        class="quotes text-center py-5 my-5 d-flex align-items-center justify-content-center flex-column"
+      >
+        <h5 class="section-title">WHO I AM</h5>
+        <p class="fs-2">
+          "Within the chaos, it’s possible to find a certain order and calm that
+          you’ll only find if you discover who you are, for which you’ll need
+          the chaos."
+        </p>
+        <p class="fw-bold fs-5">- Jolene Prins -</p>
+      </section>
+      <section class="instagram-posts">
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+            <div class="col px-0 position-relative overflow-hidden">
+              <a
+                href="#"
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0 "
+              >
+                <span class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white">
+                  <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i>
+                  <br />
+                  #JolenPrins
+                </span>
+              </a>
+              <img class="img-fluid" src="https://scontent.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=MgCWg1svUw4AX_Voj5z&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDenC7Eo8Kc0R6ejRrgvceRGR8HtCSo8Z7ld3p-85LXhQ&oe=6552DB5F" alt="" />
+            </div>
+            <div class="col px-0 position-relative overflow-hidden">
+              <a
+                href="#"
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0 "
+              >
+                <span class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white">
+                  <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i>
+                  <br />
+                  #JolenPrins
+                </span>
+              </a>
+              <img class="img-fluid" src="https://scontent.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=MgCWg1svUw4AX_Voj5z&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDenC7Eo8Kc0R6ejRrgvceRGR8HtCSo8Z7ld3p-85LXhQ&oe=6552DB5F" alt="" />
+            </div>
+            <div class="col px-0 position-relative overflow-hidden">
+              <a
+                href="#"
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0 "
+              >
+                <span class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white">
+                  <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i>
+                  <br />
+                  #JolenPrins
+                </span>
+              </a>
+              <img class="img-fluid" src="https://scontent.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=MgCWg1svUw4AX_Voj5z&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDenC7Eo8Kc0R6ejRrgvceRGR8HtCSo8Z7ld3p-85LXhQ&oe=6552DB5F" alt="" />
+            </div>
+            <div class="col px-0 position-relative overflow-hidden">
+              <a
+                href="#"
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0 "
+              >
+                <span class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white">
+                  <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i>
+                  <br />
+                  #JolenPrins
+                </span>
+              </a>
+              <img class="img-fluid" src="https://scontent.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=MgCWg1svUw4AX_Voj5z&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDenC7Eo8Kc0R6ejRrgvceRGR8HtCSo8Z7ld3p-85LXhQ&oe=6552DB5F" alt="" />
+            </div>
+    
           </div>
         </div>
       </section>
-    </main> -->
+    </main>
+
+    <footer
+      class="d-flex align-items-center flex-column gap-5 pt-5 mt-5 text-center bg-dark"
+    >
+      <img
+        class="img-fluid"
+        id="brand-footer"
+        src="img/JP-logo_horizontal_white.png"
+        alt=""
+      />
+      <div class="d-flex gap-4">
+        <a href="#" class="text-decoration-none text-light">My Story</a>
+        <a href="#" class="text-decoration-none text-light">Blogs</a>
+        <a href="#" class="text-decoration-none text-light">Gallery</a>
+        <a href="#" class="text-decoration-none text-light">Contact</a>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <ul class="list-unstyled d-flex gap-3 align-items-center">
+          <li>
+            <a
+              href="#"
+              class="border border-light border-opacity-25 border-1 rounded-circle p-3"
+              ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="border border-light border-opacity-25 border-1 rounded-circle p-3"
+              ><i class="fa-brands fa-x-twitter" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="border border-light border-opacity-25 border-1 rounded-circle p-3"
+              ><i class="fa-brands fa-facebook" style="color: #ffffff"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-100">
+        <hr class="border-top border-light opacity-25 w-100" />
+        <p class="text-light small">
+          © 2023 Jolene Prins. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

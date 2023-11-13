@@ -1,7 +1,28 @@
-const cursor = new MouseFollower({
-  // container: ".mf-container",
-  speed: 0.3,
+// Get all elements with the class .insta-trigger
+var instaTriggers = document.querySelectorAll(".insta-trigger");
+
+// Loop through each element and add event listeners
+instaTriggers.forEach(function (trigger) {
+  trigger.addEventListener("mouseover", function (e) {
+    console.log(e.target);
+    var spanElement = e.target.querySelector("span");
+
+    if (spanElement) {
+      spanElement.classList.remove("visually-hidden");
+      spanElement.classList.add("your-class-name"); // Replace "your-class-name" with the actual class you want to add
+    }
+  });
+
+  trigger.addEventListener("mouseleave", function () {
+    var spanElement = trigger.querySelector("span");
+
+    if (spanElement) {
+      spanElement.classList.add("visually-hidden");
+      spanElement.classList.remove("your-class-name"); // Replace "your-class-name" with the actual class you want to remove
+    }
+  });
 });
+
 
 // $('.owl-carousel').owlCarousel({
 //   loop:true,

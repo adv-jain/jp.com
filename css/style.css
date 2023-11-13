@@ -1,3 +1,71 @@
+body {
+  font-family: museo-sans, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 700;
+}
+
 .navbar-brand img {
   height: 75px;
+}
+
+.section-title {
+  letter-spacing: 2px;
+  color: black;
+  font-size: 1rem;
+}
+
+.post_date i {
+  font-size: 5px;
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+.swiper {
+  padding-bottom: 100px !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  top: 88% !important;
+}
+
+#brand-footer {
+  height: 100px;
+}
+.quotes h5 + p {
+  max-width: 56ch;
+}
+
+/* .insta-trigger:hover .xyz  {
+  display: block !important;
+  background: red;
+}
+.insta-trigger:hover .insta-trigger > span {
+  display: block;
+  background-color: red !important;
+}
+
+.insta-trigger span {
+  display: none;
+} */
+
+/* .instagram-posts .row > col img + div {
+  display: none;
+} */
+
+.insta-trigger span {
+  background: rgba(0, 0, 0, 0.4);
 }
