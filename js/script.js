@@ -72,3 +72,34 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+// typing animation
+
+new TypeIt("#type_write", { 
+  lifeLike: false, 
+  breakLines: false, 
+  loop: true,
+  speed: 0 ,
+}
+)
+  .type("C")
+  .pause(150)
+  .type("h")
+  .pause(150)
+  .type("a")
+  .pause(150)
+  .type("o")
+  .pause(150)
+  .type("s")
+  .pause(150)
+  .delete(1)
+  .pause(70)
+  .delete(1)
+  .pause(70)
+  .delete(1)
+  .pause(70)
+  .delete(1)
+  .pause(70)
+  .delete(1)
+  .go();
