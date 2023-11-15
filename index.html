@@ -35,7 +35,10 @@
       href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
     />
 
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"
+    ></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
@@ -46,26 +49,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -175,7 +158,7 @@
               Your Research
             </h1>
             <a
-              class="rounded-0 btn btn-warning mt-4 px-5 py-3 fw-semibold text-white"
+              class="rounded-0 btn btn-main mt-4 px-5 py-3 fw-semibold text-white"
               >Discover Now</a
             >
           </div>
@@ -210,20 +193,19 @@
           </div>
         </div> -->
 
-        <div class="swiper">
+        <div class="swiper" id="latest-blog">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website-1.jpg?resize=890%2C510&ssl=1"
-                alt=""
-              />
-              <a href="#"></a>
+              <a href="#" class="stretched-link d-inline-block overflow-hidden">
+                <img
+                  class="img-fluid stretched-link-img object-fit-cover h-100"
+                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website-1.jpg?resize=890%2C510&ssl=1"
+                  alt=""
+                />
+              </a>
               <div class="mt-4">
                 <div class="section-title">Beyond the Saree</div>
-                <h5 class="mt-3">
-                  When did you come to India?
-                </h5>
+                <h5 class="mt-3">When did you come to India?</h5>
                 <div
                   class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
                 >
@@ -234,17 +216,36 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="https://writer.ancorathemes.com/wp-content/uploads/2020/04/post-32-890x664.jpg"
-                alt=""
-              />
-              <a href="#"></a>
+              <a href="#" class="stretched-link d-inline-block overflow-hidden">
+                <img
+                  class="img-fluid stretched-link-img object-fit-cover h-100"
+                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website.jpg?resize=890%2C510&ssl=1"
+                  alt=""
+                />
+              </a>
               <div class="mt-4">
-                <div class="section-title">TREND</div>
-                <h5 class="mt-3">
-                  Keeping yourself busy with literature trends in 2023
-                </h5>
+                <div class="section-title">Voorbij de Saree</div>
+                <h5 class="mt-3">Roughing it</h5>
+                <div
+                  class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
+                >
+                  <span>7th November 2023</span>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>0 Comments</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="stretched-link d-inline-block overflow-hidden">
+                <img
+                  class="img-fluid stretched-link-img object-fit-cover h-100"
+                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website-1.jpg?resize=890%2C510&ssl=1"
+                  alt=""
+                />
+              </a>
+              <div class="mt-4">
+                <div class="section-title">Beyond the Saree</div>
+                <h5 class="mt-3">When did you come to India?</h5>
                 <div
                   class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
                 >
@@ -255,17 +256,16 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="https://writer.ancorathemes.com/wp-content/uploads/2020/04/post-32-890x664.jpg"
-                alt=""
-              />
-              <a href="#"></a>
+              <a href="#" class="stretched-link d-inline-block overflow-hidden">
+                <img
+                  class="img-fluid stretched-link-img object-fit-cover h-100"
+                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website-1.jpg?resize=890%2C510&ssl=1"
+                  alt=""
+                />
+              </a>
               <div class="mt-4">
-                <div class="section-title">TREND</div>
-                <h5 class="mt-3">
-                  Keeping yourself busy with literature trends in 2023
-                </h5>
+                <div class="section-title">Beyond the Saree</div>
+                <h5 class="mt-3">When did you come to India?</h5>
                 <div
                   class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
                 >
@@ -276,38 +276,16 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="https://writer.ancorathemes.com/wp-content/uploads/2020/04/post-32-890x664.jpg"
-                alt=""
-              />
-              <a href="#"></a>
+              <a href="#" class="stretched-link d-inline-block overflow-hidden">
+                <img
+                  class="img-fluid stretched-link-img object-fit-cover h-100"
+                  src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website-1.jpg?resize=890%2C510&ssl=1"
+                  alt=""
+                />
+              </a>
               <div class="mt-4">
-                <div class="section-title">TREND</div>
-                <h5 class="mt-3">
-                  Keeping yourself busy with literature trends in 2023
-                </h5>
-                <div
-                  class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
-                >
-                  <span>Oct 22, 2023</span>
-                  <i class="fa-solid fa-circle"></i>
-                  <span>3 Comments</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="img-fluid"
-                src="https://writer.ancorathemes.com/wp-content/uploads/2020/04/post-32-890x664.jpg"
-                alt=""
-              />
-              <a href="#"></a>
-              <div class="mt-4">
-                <div class="section-title">TREND</div>
-                <h5 class="mt-3">
-                  Keeping yourself busy with literature trends in 2023
-                </h5>
+                <div class="section-title">Beyond the Saree</div>
+                <h5 class="mt-3">When did you come to India?</h5>
                 <div
                   class="mt-3 fs-7 text-secondary post_date d-flex align-items-center gap-2"
                 >
@@ -337,62 +315,119 @@
         <p class="small fw-bold text-center">Follow Me!</p>
         <!-- <div class="text-center small section-title">Follow Me!</div>
         <h2 class="text-center display-4 fw-bold mb-5">Follow Me On Instagram</h2> -->
-        <div class="container-fluid">
+        <!-- <div class="container-fluid">
           <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
             <div class="col px-0 position-relative overflow-hidden">
               <a
                 href="#"
-                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0 "
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0"
               >
-                <span class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white">
-                  <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i>
+                <span
+                  class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-lg"
+                    style="color: #ffffff"
+                  ></i>
                   <br />
                   #JolenPrins
                 </span>
               </a>
-              <img class="img-fluid" src="https://scontent.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=MgCWg1svUw4AX_Voj5z&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDenC7Eo8Kc0R6ejRrgvceRGR8HtCSo8Z7ld3p-85LXhQ&oe=6552DB5F" alt="" />
+              <img
+                class="img-fluid"
+                src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/01/gallery_2.png?fit=403%2C303&ssl=1"
+                alt=""
+              />
             </div>
             <div class="col px-0 position-relative overflow-hidden">
               <a
                 href="#"
-                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0 "
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0"
               >
-                <span class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white">
-                  <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i>
+                <span
+                  class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-lg"
+                    style="color: #ffffff"
+                  ></i>
                   <br />
                   #JolenPrins
                 </span>
               </a>
-              <img class="img-fluid" src="https://scontent.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=MgCWg1svUw4AX_Voj5z&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDenC7Eo8Kc0R6ejRrgvceRGR8HtCSo8Z7ld3p-85LXhQ&oe=6552DB5F" alt="" />
+              <img
+                class="img-fluid"
+                src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/01/gallery-4.png?fit=344%2C400&ssl=1"
+                alt=""
+              />
             </div>
             <div class="col px-0 position-relative overflow-hidden">
               <a
                 href="#"
-                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0 "
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0"
               >
-                <span class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white">
-                  <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i>
+                <span
+                  class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-lg"
+                    style="color: #ffffff"
+                  ></i>
                   <br />
                   #JolenPrins
                 </span>
               </a>
-              <img class="img-fluid" src="https://scontent.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=MgCWg1svUw4AX_Voj5z&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDenC7Eo8Kc0R6ejRrgvceRGR8HtCSo8Z7ld3p-85LXhQ&oe=6552DB5F" alt="" />
+              <img
+                class="img-fluid"
+                src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/01/gallery_1.png?fit=384%2C303&ssl=1"
+                alt=""
+              />
             </div>
             <div class="col px-0 position-relative overflow-hidden">
               <a
                 href="#"
-                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0 "
+                class="insta-trigger z-2 position-absolute top-0 bottom-0 start-0 end-0"
               >
-                <span class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white">
-                  <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i>
+                <span
+                  class="visually-hidden text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center flex-column text-white"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-lg"
+                    style="color: #ffffff"
+                  ></i>
                   <br />
                   #JolenPrins
                 </span>
               </a>
-              <img class="img-fluid" src="https://scontent.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=MgCWg1svUw4AX_Voj5z&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDenC7Eo8Kc0R6ejRrgvceRGR8HtCSo8Z7ld3p-85LXhQ&oe=6552DB5F" alt="" />
+              <img
+                class="img-fluid"
+                src="https://scontent.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=MgCWg1svUw4AX_Voj5z&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDenC7Eo8Kc0R6ejRrgvceRGR8HtCSo8Z7ld3p-85LXhQ&oe=6552DB5F"
+                alt=""
+              />
             </div>
-    
           </div>
+        </div> -->
+
+        <!-- other way -->
+        <div class="row" id="instagram-feed">
+          <div class="col-3 px-0">
+            <div class="card border-0">
+              <a href="#" class="stretched-link">
+              <img
+                src="https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/11/For-website-1.jpg?resize=890%2C510&ssl=1"
+                alt=""
+                class="img-fluid card-img"
+              />
+              <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                <i
+                  class="fa-brands fa-instagram fa-lg"
+                  style="color: #ffffff"
+                ></i>
+              </div>
+            </a>
+            </div>
+          </div>
+      
         </div>
       </section>
     </main>

@@ -1,10 +1,11 @@
+var cursor = new MouseFollower();
+
 // Get all elements with the class .insta-trigger
 var instaTriggers = document.querySelectorAll(".insta-trigger");
 
 // Loop through each element and add event listeners
 instaTriggers.forEach(function (trigger) {
   trigger.addEventListener("mouseover", function (e) {
-    console.log(e.target);
     var spanElement = e.target.querySelector("span");
 
     if (spanElement) {

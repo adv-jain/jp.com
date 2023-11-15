@@ -1,3 +1,16 @@
+:root {
+  --light-grey: #e6e8ea;
+  --grey: #949494;
+  --black: #000;
+  --hightlight: #e7d9d5;
+  --hightlight-secondary: #f5efeb;
+  --white: #fff;
+
+  /* --primiary:;
+  --secondary:;
+  --tertiary:; */
+}
+
 body {
   font-family: museo-sans, sans-serif;
 }
@@ -21,7 +34,7 @@ h6,
 .section-title {
   letter-spacing: 2px;
   color: black;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .post_date i {
@@ -69,4 +82,59 @@ h6,
 
 .insta-trigger span {
   background: rgba(0, 0, 0, 0.4);
+}
+
+.insta-trigger::before,
+.insta-trigger::after {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  /* transition: opacity 0.5s, transform 0.5s; */
+  transition: all 5s ease-in-out;
+  z-index: 9999;
+  /* border-top: 2px solid #fff; */
+}
+
+.overflow-hidden:hover .insta-trigger::before {
+  opacity: 1 !important;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  background-color: red;
+}
+
+.btn-main {
+  background-color: var(--hightlight);
+  color: var(--black) !important;
+}
+.btn-main:hover {
+  background-color: var(--hightlight-secondary);
+}
+#latest-blog .swiper-slide .stretched-link {
+  height: 230px;
+  object-fit: cover;
+}
+#latest-blog .swiper-slide .stretched-link-img {
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+#latest-blog .stretched-link:hover .stretched-link-img {
+  transform: scale(1.06);
+}
+
+.card-img-overlay {
+  display: none;
+  visibility: hidden;
+}
+
+#instagram-feed a:hover .card-img-overlay {
+  visibility: visible;
+  display: block;
+}
+#instagram-feed a:hover .card-img-overlay::after {
+  border-top: 1px solid white;
 }
