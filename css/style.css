@@ -24,7 +24,6 @@ h6,
 .section-title {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .navbar-brand img {
@@ -35,10 +34,14 @@ h6,
   letter-spacing: 2px;
   color: black;
   font-size: 0.9rem;
+  text-transform: uppercase;
 }
+/* .post_date {
+  color: #8F9092;
+} */
 
 .post_date i {
-  font-size: 5px;
+  font-size: 3px;
 }
 
 .fs-7 {
@@ -137,4 +140,17 @@ h6,
 }
 #instagram-feed a:hover .card-img-overlay::after {
   border-top: 1px solid white;
+}
+
+.quotes {
+  /* background-color: var(--hightlight); */
+  background-color: var(--hightlight-secondary);
+}
+
+.swiper-pagination-bullet-active {
+  color: #F14105 !important;
+  background-color: #F14105 !important;
+}
+#quote-designation {
+  font-size: 14px;
 }
