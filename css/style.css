@@ -36,11 +36,11 @@ h6,
   font-size: 0.9rem;
   text-transform: uppercase;
 }
-/* .post_date {
+/* .swiper-post-date {
   color: #8F9092;
 } */
 
-.post_date i {
+.swiper-post-date i {
   font-size: 3px;
 }
 
@@ -60,7 +60,7 @@ h6,
 }
 
 #brand-footer {
-  height: 100px;
+  height: 80px;
 }
 .quotes h5 + p {
   max-width: 56ch;
@@ -131,12 +131,17 @@ h6,
 
 .card-img-overlay {
   display: none;
-  visibility: hidden;
+  /* visibility: hidden; */
+  opacity: 0;
+}
+#instagram-feed .card:hover .stretched-link  {
+  background-color: rgba(0,0,0,0.4) ;
 }
 
 #instagram-feed a:hover .card-img-overlay {
-  visibility: visible;
   display: block;
+  /* visibility: visible; */
+  opacity: 1;
 }
 #instagram-feed a:hover .card-img-overlay::after {
   border-top: 1px solid white;
@@ -155,3 +160,26 @@ h6,
   font-size: 14px;
 }
 
+footer a i {
+  color: #fff;
+}
+
+#footer-nav a:hover {
+  color: #F14105 !important; 
+}
+#footer-social a:hover i {
+  color: #c862dc !important;
+}
+
+
+#instagram-feed .card-img-overlay {
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  transition: all .5s;
+}
+
+#instagram-feed .card:hover .card-img-overlay {
+  border-top: 1px solid #fff;
+}
