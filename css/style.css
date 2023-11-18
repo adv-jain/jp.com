@@ -1,7 +1,7 @@
 :root {
   --light-grey: #e6e8ea;
   --grey: #949494;
-  --black: #000;
+  --black: #120304;
   --hightlight: #e7d9d5;
   --hightlight-secondary: #f5efeb;
   --white: #fff;
@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: museo-sans, sans-serif;
+  font-family: "Frank Ruhl Libre", serif !important;
 }
 
 h1,
@@ -22,7 +22,6 @@ h4,
 h5,
 h6,
 .section-title {
-  font-family: "Frank Ruhl Libre", serif;
   font-weight: 700;
 }
 
@@ -62,8 +61,11 @@ h6,
 #brand-footer {
   height: 80px;
 }
-.quotes h5 + p {
-  max-width: 56ch;
+footer {
+  background-color: var(--black);
+}
+.quotes p {
+  max-width: 36ch;
 }
 
 /* .insta-trigger:hover .xyz  {
@@ -119,7 +121,7 @@ h6,
   background-color: var(--hightlight-secondary);
 }
 #latest-blog .swiper-slide .stretched-link {
-  height: 230px;
+  height: 330px;
   object-fit: cover;
 }
 #latest-blog .swiper-slide .stretched-link-img {
@@ -134,8 +136,8 @@ h6,
   /* visibility: hidden; */
   opacity: 0;
 }
-#instagram-feed .card:hover .stretched-link  {
-  background-color: rgba(0,0,0,0.4) ;
+#instagram-feed .card:hover .stretched-link {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 #instagram-feed a:hover .card-img-overlay {
@@ -147,14 +149,23 @@ h6,
   border-top: 1px solid white;
 }
 
+/* .quotes, */
+.instagram-posts div:first-child {
+  background-color: var(--hightlight);
+}
+
 .quotes {
-  /* background-color: var(--hightlight); */
-  background-color: var(--hightlight-secondary);
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.quote-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .swiper-pagination-bullet-active {
-  color: #F14105 !important;
-  background-color: #F14105 !important;
+  color: #f14105 !important;
+  background-color: #f14105 !important;
 }
 #quote-designation {
   font-size: 14px;
@@ -165,21 +176,33 @@ footer a i {
 }
 
 #footer-nav a:hover {
-  color: #F14105 !important; 
+  color: #f14105 !important;
 }
 #footer-social a:hover i {
   color: #c862dc !important;
 }
-
 
 #instagram-feed .card-img-overlay {
   top: 25px;
   bottom: 25px;
   left: 25px;
   right: 25px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 #instagram-feed .card:hover .card-img-overlay {
   border-top: 1px solid #fff;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  header video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  header video {
+    width: auto;
+    height: 100%;
+  }
 }

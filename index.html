@@ -57,14 +57,14 @@
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   </head>
   <body>
-    <header class="min-vh-100 position-relative mw-100">
+    <header class="min-vh-100 position-relative mw-100 d-flex flex-column">
       <!-- poster="https://via.placeholder.com/1920x1080/000.svg" -->
       <!-- src="https://writer.ancorathemes.com/wp-content/uploads/2022/01/video-bg.mp4" -->
       <video
         autoplay
         muted
         loop
-        src="videos/Sequence 01.mp4"
+        src="videos/Homepage_1.mp4"
         class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 end-0 bottom-0 z-n1"
       ></video>
       <nav class="navbar navbar-expand-lg py-4" data-bs-theme="dark">
@@ -150,28 +150,22 @@
         </div>
       </nav>
 
-      <div class="container py-5 my-5">
+      <div class="container py-5 my-5 flex-grow-1 align-items-center d-flex">
         <div class="row">
           <div class="col-12 text-white">
-            <p class="text-uppercase">Latest Articles And Journals</p>
-            <h1 class="display-1 fw-bold">
-              We Help You Finalize <br />
-              Your Research
+            <h1 class="display-3 fw-bold">
+              Crossing borders, <br />
+              one story at the time
             </h1>
-            <a
-              class="rounded-0 btn btn-main mt-4 px-5 py-3 fw-semibold text-white"
-              >Discover Now</a
-            >
           </div>
         </div>
       </div>
     </header>
 
-    <main class="py-5 mt-5">
+    <main class="pt-5 mt-5">
       <section class="container">
-        <div class="text-center small section-title">BLOG FEED</div>
         <h2 class="text-center display-4 fw-bold mb-5 mt-3">
-          Latest From the Blog
+          Latest From the <span id="blog-typeit"></span>
         </h2>
 
         <div class="swiper" id="latest-blog">
@@ -281,26 +275,28 @@
         </div>
       </section>
       <section
-        class="quotes text-center py-5 my-5 d-flex align-items-center justify-content-center flex-column"
+        class="quotes vh-100 position-relative text-center py-5 my-5 d-flex align-items-center justify-content-center flex-column"
       >
-        <h5 class="section-title mt-5">WHO I AM</h5>
-        <p class="fs-1 fw-bold">
-          "Within the Chaos, It’s Possible to Find A Certain <br />
-          Order and Calm that you’ll Only Find If You Discover Who You are, For
-          Which You’ll Need the
+      <div class="position-absolute top-0 start-0 bottom-0 end-0 quote-overlay "></div>
+        <p class="fs-1 fw-bold py-5 my-5 position-relative z-3 text-white">
+          "Within the chaos, it’s possible to find a certain order and calm that
+          you’ll only find If you discover who you are, for which you’ll Need
+          the
           <span id="type_write" class="text-decoration-underline"></span>."
         </p>
-        <p class="fw-normal fs-5 mb-5">
+        <!-- <p class="fw-normal fs-5 mb-5">
           Jolene Prins
           <br />
           <span class="fw-light small text-muted" id="quote-designation"
             >Creative Director</span
           >
-        </p>
+        </p> -->
       </section>
-      <section class="instagram-posts my-5 py-5">
-        <h2 class="text-center">Follow Me On Instagram</h2>
-        <p class="small fw-bold text-center">Follow Me!</p>
+      <section class="instagram-posts mt-5">
+        <div class="py-3">
+          <h2 class="text-center">Follow Me On Instagram</h2>
+          <p class="small fw-bold text-center text-dark">Follow Me!</p>
+        </div>
         <!-- <div class="text-center small section-title">Follow Me!</div>
         <h2 class="text-center display-4 fw-bold mb-5">Follow Me On Instagram</h2> -->
         <!-- <div class="container-fluid">
@@ -704,7 +700,7 @@
     </main>
 
     <footer
-      class="d-flex align-items-center flex-column gap-5 pt-5 text-center bg-dark"
+      class="d-flex align-items-center flex-column gap-5 pt-5 text-center"
     >
       <img
         class="img-fluid mt-5"
@@ -739,7 +735,7 @@
             <a
               href="#"
               class="border border-light border-opacity-25 border-1 rounded-circle p-3"
-              ><i class="fa-brands fa-facebook"></i
+              ><i class="fa-brands fa-linkedin"></i
             ></a>
           </li>
         </ul>

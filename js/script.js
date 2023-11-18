@@ -46,6 +46,10 @@ instaTriggers.forEach(function (trigger) {
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   spaceBetween: 30,
   breakpoints: {
     0: {
@@ -83,7 +87,7 @@ new TypeIt("#type_write", {
   speed: 0 ,
 }
 )
-  .type("C")
+  .type("c")
   .pause(150)
   .type("h")
   .pause(150)
@@ -103,3 +107,27 @@ new TypeIt("#type_write", {
   .pause(70)
   .delete(1)
   .go();
+
+  new TypeIt("#blog-typeit", {
+    lifeLike: false,
+    breakLines: false,
+    loop: true,
+    speed: 0,
+  }) 
+    .type("B")
+    .pause(150)
+    .type("l")
+    .pause(150)
+    .type("o")
+    .pause(150)
+    .type("g")
+    .pause(150)
+    .delete(1)
+    .pause(70)
+    .delete(1)
+    .pause(70)
+    .delete(1)
+    .pause(70)
+    .delete(1)
+    .pause(70)
+    .go();
