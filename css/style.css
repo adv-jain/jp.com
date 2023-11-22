@@ -5,7 +5,7 @@
   --hightlight: #e7d9d5;
   --hightlight-secondary: #f5efeb;
   --white: #fff;
-
+  --bs-heading-color: var(--black);
   /* --primiary:;
   --secondary:;
   --tertiary:; */
@@ -164,8 +164,10 @@ footer {
 }
 
 .swiper-pagination-bullet-active {
-  color: #f14105 !important;
-  background-color: #f14105 !important;
+  background-color: var(--black) !important;
+}
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  background-color: var(--hightlight) !important;
 }
 #quote-designation {
   font-size: 14px;
@@ -205,4 +207,34 @@ footer a i {
     width: auto;
     height: 100%;
   }
+}
+
+
+nav a:hover {
+  opacity: 0.8;
+  text-decoration: underline !important;
+  /* color: var(--black) !important */
+
+}
+nav a {
+  color: var(--hightlight) !important
+}
+
+.custom-btn {
+  background-color: var(--hightlight);
+  color: var(--black) !important;
+  border: none;
+}
+
+.custom-btn:hover {
+  background-color: var(--hightlight-secondary);
+}
+
+.theme-color-hightlight {
+  color: var(--hightlight);
+}
+
+nav {
+  /* background-color: #12030461; */
+  transition: all .5s;
 }

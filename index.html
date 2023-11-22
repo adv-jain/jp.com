@@ -67,7 +67,10 @@
         src="videos/Homepage_1.mp4"
         class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 end-0 bottom-0 z-n1"
       ></video>
-      <nav class="navbar navbar-expand-lg py-4" data-bs-theme="dark">
+      <nav
+        class="navbar navbar-expand-lg z-3 start-0 end-0 top-0"
+        data-bs-theme="dark"
+      >
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="img/JP-logo_horizontal_white.png" alt="" />
@@ -86,65 +89,65 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">My Story</a>
+                <a class="nav-link fw-bold" aria-current="page" href="#"
+                  >My Story</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blogs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item d-flex align-items-center">
-                <ul class="list-unstyled d-flex gap-4 align-items-center">
-                  <li>
-                    <a href="#"
-                      ><i
-                        class="fa-brands fa-instagram"
-                        style="color: #ffffff"
-                      ></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i
-                        class="fa-brands fa-x-twitter"
-                        style="color: #ffffff"
-                      ></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i
-                        class="fa-brands fa-linkedin"
-                        style="color: #ffffff"
-                      ></i
-                    ></a>
-                  </li>
-                </ul>
-              </li>
-
-              <!-- <li class="nav-item dropdown">
+              <!-- <li class="nav-item">
+                <a class="nav-link  fw-bold" href="#">Blogs</a>
+              </li> -->
+              <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle fw-bold"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Blogs
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Beyond The Saree</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Beyond The Wooden Shoes</a
+                    >
+                  </li>
+                  <!-- <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  </li> -->
                 </ul>
-              </li> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Contact</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <ul class="list-unstyled d-flex gap-4 align-items-center">
+                  <li>
+                    <a href="#"
+                      ><i class="fa-brands fa-instagram fw-bold"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/jolene-prins-05311280/"
+                      class=""
+                      ><i class="fa-brands fa-linkedin fw-bold"></i
+                    ></a>
+                  </li>
+                  <!-- <li>
+                    <a href="#"
+                      ><i class="fa-brands fa-x-twitter  fw-bold"></i
+                    ></a>
+                  </li> -->
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -153,10 +156,15 @@
       <div class="container py-5 my-5 flex-grow-1 align-items-center d-flex">
         <div class="row">
           <div class="col-12 text-white">
-            <h1 class="display-3 fw-bold">
+            <h1 class="display-3 fw-bold theme-color-hightlight">
               Crossing borders, <br />
-              one story at the time
+              one story <br />
+              at the time
             </h1>
+            <a
+              class="custom-btn rounded-0 btn btn-warning mt-4 px-5 py-3 fw-semibold text-white"
+              >Discover Now</a
+            >
           </div>
         </div>
       </div>
@@ -165,7 +173,7 @@
     <main class="pt-5 mt-5">
       <section class="container">
         <h2 class="text-center display-4 fw-bold mb-5 mt-3">
-          Latest From the <span id="blog-typeit"></span>
+          Latest From the Blog<span not="blog-typeit"></span>
         </h2>
 
         <div class="swiper" id="latest-blog">
@@ -282,9 +290,9 @@
         ></div>
         <p class="fs-1 fw-bold py-5 my-5 position-relative z-3 text-white">
           "Within the chaos, it’s possible to find a certain order and calm that
-          you’ll only find If you discover who you are, for which you’ll Need
-          the
-          <span id="type_write" class="text-decoration-underline"></span>."
+          you’ll only find <br />
+          if you discover who you are, for which you’ll need the change
+          <!-- <span id="type_write" class="text-decoration-underline"></span>." -->
         </p>
         <!-- <p class="fw-normal fs-5 mb-5">
           Jolene Prins
@@ -427,15 +435,92 @@
             <div class="images clearfix buzzi-list">
               <figure class="effect-bubba">
                 <a
+                  href="https://www.instagram.com/p/CCG7LVCnLb9/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/404262925_17887172003950503_4302991183910878449_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+               
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/p/CCeW2xpHGLk/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/404112049_17886908663950503_3574463652215956419_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+             
+
+           
+              
+             
+              
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/p/CCeWxe-HM80/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/404121591_17886742250950503_6240901218808161879_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+
+              <figure class="effect-bubba">
+                <a
                   href="https://www.instagram.com/p/CCeXMv4HiQ0/"
                   target="_blank"
                   class="overlay-button"
-                  title="#JolenePrins"
+                  title="#joleneprins.com_blog"
                 ></a
                 ><img
                   class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/106914471_770550663752719_1039027416290354966_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=MPUxEEHnsOMAX_9wF7K&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfB7IhcH1FiAeg9Bo-tY53P_LgYOF-_zxgKujHnsyjVEcg&amp;oe=655AC45F"
-                  alt="#JolenePrins"
+                  src="img/insta/399742377_17886629372950503_1225823373204815677_n.jpg"
+                  alt="#joleneprins.com_blog"
                   width="640"
                   height="640"
                 />
@@ -445,20 +530,23 @@
                       <i class="fa-brands fa-instagram fa-lg fs-3"></i
                     ></span>
                   </p>
-                  <p class="description">#JolenePrins</p>
+                  <p class="description">#joleneprins.com_blog</p>
                 </figcaption>
               </figure>
+
+             
+
               <figure class="effect-bubba">
                 <a
-                  href="https://www.instagram.com/p/CCeXKXGHEff/"
+                  href="https://www.instagram.com/p/CCeW5qZnrnX/"
                   target="_blank"
                   class="overlay-button"
-                  title="#JolenePrins"
+                  title="#joleneprins.com_blog"
                 ></a
                 ><img
                   class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/107511168_282810319471353_9078749450762206596_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=TvYvjl0KDowAX9jbOCB&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfC1MPexckXKWT0-BOSk6SoHFIyHnsGTFiQ_sGe4tOIKLQ&amp;oe=65598398"
-                  alt="#JolenePrins"
+                  src="img/insta/402610577_17886228368950503_6553728054227522349_n.jpg"
+                  alt="#joleneprins.com_blog"
                   width="640"
                   height="640"
                 />
@@ -468,7 +556,55 @@
                       <i class="fa-brands fa-instagram fa-lg fs-3"></i
                     ></span>
                   </p>
-                  <p class="description">#JolenePrins</p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/p/CCeW8hQHWms/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/401506182_17885998619950503_1883784223618503641_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
+                </figcaption>
+              </figure>
+
+              <figure class="effect-bubba">
+                <a
+                  href="https://www.instagram.com/p/CCeW_f3nSDU/"
+                  target="_blank"
+                  class="overlay-button"
+                  title="#joleneprins.com_blog"
+                ></a
+                ><img
+                  class="nolazyload nopin"
+                  src="img/insta/400864790_17885869892950503_8486895227918863320_n.jpg"
+                  alt="#joleneprins.com_blog"
+                  width="640"
+                  height="640"
+                />
+                <figcaption>
+                  <p class="icon-links">
+                    <span class="icon-instagram">
+                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
+                    ></span>
+                  </p>
+                  <p class="description">#joleneprins.com_blog</p>
                 </figcaption>
               </figure>
               <figure class="effect-bubba">
@@ -476,12 +612,12 @@
                   href="https://www.instagram.com/p/CCeXEYWHtLA/"
                   target="_blank"
                   class="overlay-button"
-                  title="#JolenePrins"
+                  title="#joleneprins.com_blog"
                 ></a
                 ><img
                   class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/107329705_1521831864653291_4495419226938596466_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=Sa1w0UIAlDoAX9Hkp_Y&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAWBN72v7JCQL8anN61ai3fFvNY_8EwKDf13jerWjyXOQ&amp;oe=655A30C7"
-                  alt="#JolenePrins"
+                  src="img/insta/400690418_17885704460950503_2906692155742495189_n.jpg"
+                  alt="#joleneprins.com_blog"
                   width="640"
                   height="640"
                 />
@@ -491,20 +627,20 @@
                       <i class="fa-brands fa-instagram fa-lg fs-3"></i
                     ></span>
                   </p>
-                  <p class="description">#JolenePrins</p>
+                  <p class="description">#joleneprins.com_blog</p>
                 </figcaption>
               </figure>
               <figure class="effect-bubba">
                 <a
-                  href="https://www.instagram.com/p/CCeW_f3nSDU/"
+                  href="https://www.instagram.com/p/CCeXKXGHEff/"
                   target="_blank"
                   class="overlay-button"
-                  title="#JolenePrins"
+                  title="#joleneprins.com_blog"
                 ></a
                 ><img
                   class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/107522055_594926611409995_2229357677631621961_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=WJjSd2nA12QAX-yT_h-&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfCKFONYUvp6BSzIcWUdmBWFjufnE_49FcYAH_esLaRyAQ&amp;oe=65594A39"
-                  alt="#JolenePrins"
+                  src="img/insta/399844616_17885425202950503_5947885669253235080_n.jpg"
+                  alt="#joleneprins.com_blog"
                   width="640"
                   height="640"
                 />
@@ -514,129 +650,15 @@
                       <i class="fa-brands fa-instagram fa-lg fs-3"></i
                     ></span>
                   </p>
-                  <p class="description">#JolenePrins</p>
+                  <p class="description">#joleneprins.com_blog</p>
                 </figcaption>
               </figure>
-              <figure class="effect-bubba">
-                <a
-                  href="https://www.instagram.com/p/CCeW8hQHWms/"
-                  target="_blank"
-                  class="overlay-button"
-                  title="#JolenePrins"
-                ></a
-                ><img
-                  class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/108864386_815132448893875_8091014049310205051_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=wR3pIgRI-WcAX_nbAOJ&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfCJxSaiSV8wLjvGT58QBtq7e6J25dDaLFBnTTPQZ22jjg&amp;oe=65595258"
-                  alt="#JolenePrins"
-                  width="640"
-                  height="640"
-                />
-                <figcaption>
-                  <p class="icon-links">
-                    <span class="icon-instagram">
-                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                    ></span>
-                  </p>
-                  <p class="description">#JolenePrins</p>
-                </figcaption>
-              </figure>
-              <figure class="effect-bubba">
-                <a
-                  href="https://www.instagram.com/p/CCeW5qZnrnX/"
-                  target="_blank"
-                  class="overlay-button"
-                  title="#JolenePrins"
-                ></a
-                ><img
-                  class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/106913493_314509043050486_9167909990242848576_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=qIbLptsOdmEAX8hP5p8&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDJB35GqLcPaw4wyyKX9hLYpk5Mq1Nsh7TZKB78--nEEg&amp;oe=655910C5"
-                  alt="#JolenePrins"
-                  width="640"
-                  height="640"
-                />
-                <figcaption>
-                  <p class="icon-links">
-                    <span class="icon-instagram">
-                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                    ></span>
-                  </p>
-                  <p class="description">#JolenePrins</p>
-                </figcaption>
-              </figure>
-              <figure class="effect-bubba">
-                <a
-                  href="https://www.instagram.com/p/CCeW2xpHGLk/"
-                  target="_blank"
-                  class="overlay-button"
-                  title="#JolenePrins"
-                ></a
-                ><img
-                  class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/106809752_608193276500630_8688391095712202225_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=f8tCYYJMpeQAX8PJDJO&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBO3YvD-jkqIohKjPsz6e0yL--VRT1bUCi5NdsFb9lUyQ&amp;oe=655A3FEF"
-                  alt="#JolenePrins"
-                  width="640"
-                  height="640"
-                />
-                <figcaption>
-                  <p class="icon-links">
-                    <span class="icon-instagram">
-                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                    ></span>
-                  </p>
-                  <p class="description">#JolenePrins</p>
-                </figcaption>
-              </figure>
-              <figure class="effect-bubba">
-                <a
-                  href="https://www.instagram.com/p/CCeWxe-HM80/"
-                  target="_blank"
-                  class="overlay-button"
-                  title="#JolenePrins"
-                ></a
-                ><img
-                  class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/107267169_1893575644112013_5419802132382269753_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=KgAs5qn4uyoAX-a3SEr&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfB_y5orapx7C2GHyyYiH0p2q3yS76Fn2Qz2LjNkg3fiUw&amp;oe=65591202"
-                  alt="#JolenePrins"
-                  width="640"
-                  height="640"
-                />
-                <figcaption>
-                  <p class="icon-links">
-                    <span class="icon-instagram">
-                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                    ></span>
-                  </p>
-                  <p class="description">#JolenePrins</p>
-                </figcaption>
-              </figure>
-              <figure class="effect-bubba">
-                <a
-                  href="https://www.instagram.com/p/CCG7LVCnLb9/"
-                  target="_blank"
-                  class="overlay-button"
-                  title="#JolenePrins"
-                ></a
-                ><img
-                  class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/81703564_306920917364111_1862792901539392840_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=ehui11zLBQQAX_3udlO&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAGX9s2nHhFOCxXHbTDmvcTaTIAne8_5FWvLdRTzinKXA&amp;oe=65594637"
-                  alt="#JolenePrins"
-                  width="640"
-                  height="640"
-                />
-                <figcaption>
-                  <p class="icon-links">
-                    <span class="icon-instagram">
-                      <i class="fa-brands fa-instagram fa-lg fs-3"></i
-                    ></span>
-                  </p>
-                  <p class="description">#JolenePrins</p>
-                </figcaption>
-              </figure>
+
               <figure class="effect-bubba">
                 <img
                   class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/74830946_2946515652128491_2302035929175536253_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=asU6yeEqesIAX8XNgBY&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBkVilb5ODJ_qqk8ElCIvoYIdwLMaS6rtFytYGrsOgIQg&amp;oe=655AEA11"
-                  alt="#JolenePrins"
+                  src="img/insta/1.jpg"
+                  alt="#joleneprins.com_blog"
                   width="640"
                   height="640"
                 />
@@ -646,7 +668,7 @@
                       <i class="fa-brands fa-instagram fa-lg fs-3"></i
                     ></span>
                   </p>
-                  <p class="description">#JolenePrins</p>
+                  <p class="description">#joleneprins.com_blog</p>
                 </figcaption>
               </figure>
               <figure class="effect-bubba">
@@ -654,12 +676,12 @@
                   href="https://www.instagram.com/p/CCG7EwcnbPI/"
                   target="_blank"
                   class="overlay-button"
-                  title="#JolenePrins"
+                  title="#joleneprins.com_blog"
                 ></a
                 ><img
                   class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/106110958_577342969594513_8716864816322318006_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=-9yrUMYGC9IAX802eq-&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAO7LrbBkeqodOkS1s3m672SsVzRSV4wq79WPxXN5cbOw&amp;oe=655B09B5"
-                  alt="#JolenePrins"
+                  src="img/insta/2.jpg"
+                  alt="#joleneprins.com_blog"
                   width="640"
                   height="640"
                 />
@@ -669,7 +691,7 @@
                       <i class="fa-brands fa-instagram fa-lg fs-3"></i
                     ></span>
                   </p>
-                  <p class="description">#JolenePrins</p>
+                  <p class="description">#joleneprins.com_blog</p>
                 </figcaption>
               </figure>
               <figure class="effect-bubba">
@@ -677,12 +699,12 @@
                   href="https://www.instagram.com/p/CCG5NhEHuC_/"
                   target="_blank"
                   class="overlay-button"
-                  title="#JolenePrins"
+                  title="#joleneprins.com_blog"
                 ></a
                 ><img
                   class="nolazyload nopin"
-                  src="https://scontent-waw1-1.cdninstagram.com/v/t51.29350-15/106051299_1534470716714505_1702018547342451994_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=c4dd86&amp;_nc_ohc=l5lsMI0d8f8AX9Y_wJ2&amp;_nc_ht=scontent-waw1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAo2aC1CVg3bUOg6ZdEFX1goAbxp4CnfDTfgJ46KdMRnw&amp;oe=655AEAEF"
-                  alt="#JolenePrins"
+                  src="img/insta/3.jpg"
+                  alt="#joleneprins.com_blog"
                   width="640"
                   height="640"
                 />
@@ -692,7 +714,7 @@
                       <i class="fa-brands fa-instagram fa-lg fs-3"></i
                     ></span>
                   </p>
-                  <p class="description">#JolenePrins</p>
+                  <p class="description">#joleneprins.com_blog</p>
                 </figcaption>
               </figure>
             </div>
@@ -726,16 +748,16 @@
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </li>
-          <li>
+          <!-- <li>
             <a
               href="#"
               class="border border-light border-opacity-25 border-1 rounded-circle p-3"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
-          </li>
+          </li> -->
           <li>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/jolene-prins-05311280/"
               class="border border-light border-opacity-25 border-1 rounded-circle p-3"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
