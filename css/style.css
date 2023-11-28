@@ -209,15 +209,13 @@ footer a i {
   }
 }
 
-
 nav a:hover {
   opacity: 0.8;
   text-decoration: underline !important;
   /* color: var(--black) !important */
-
 }
 nav a {
-  color: var(--hightlight) !important
+  color: white !important;
 }
 
 .custom-btn {
@@ -236,5 +234,24 @@ nav a {
 
 nav {
   /* background-color: #12030461; */
-  transition: all .5s;
+  transition: all 0.5s;
+}
+
+.overlay-video-wrapper {
+  /* background: #222222b0; */
+  z-index: -1;
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=1d6401&c2=b3a987&gt=r&gd=dcc
+*/
+  /* background: radial-gradient(at center, transparent, #222222b0 ); */
+  background: radial-gradient(at center, #00000094, #222222);
+}
+
+header > video {
+  z-index: -2;
+}
+.flag-country img {
+  max-width: 20px;
+  vertical-align: middle;
 }

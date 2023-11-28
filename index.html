@@ -65,8 +65,11 @@
         muted
         loop
         src="videos/Homepage_1.mp4"
-        class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 end-0 bottom-0 z-n1"
+        class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 end-0 bottom-0"
       ></video>
+      <div
+        class="overlay-video-wrapper w-100 h-100 position-absolute top-0 start-0 end-0 bottom-0"
+      ></div>
       <nav
         class="navbar navbar-expand-lg z-3 start-0 end-0 top-0"
         data-bs-theme="dark"
@@ -140,6 +143,19 @@
                       class=""
                       ><i class="fa-brands fa-linkedin fw-bold"></i
                     ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-country d-flex">
+                      <img src="img/vecteezy_india-flag-vector_.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flag-country d-flex">
+                      <img
+                        src="img/Vector_illustration_of_the_flag_of_the_Netherlands_generated.jpg"
+                        alt=""
+                      />
+                    </a>
                   </li>
                   <!-- <li>
                     <a href="#"
@@ -288,22 +304,21 @@
         <div
           class="position-absolute top-0 start-0 bottom-0 end-0 quote-overlay"
         ></div>
-        <p class="fs-1 fw-bold py-5 my-5 position-relative z-2 text-white">
+        <p class="display-5 fw-bold pt-5 mt-5 position-relative z-2 text-white">
           "Within the chaos, it’s possible to find a certain order and calm that
           you’ll only find <br />
-          if you discover who you are, for which you’ll need the change
+          if you discover who you are, for which you’ll need the change."
           <!-- <span id="type_write" class="text-decoration-underline"></span>." -->
         </p>
-        <!-- <p class="fw-normal fs-5 mb-5">
-          Jolene Prins
-          <br />
+        <p class="fw-normal fs-4 mb-5 text-white position-relative z-2">
+          - Jolene Prins -
+          <!-- <br />
           <span class="fw-light small text-muted" id="quote-designation"
-            >Creative Director</span
-          >
-        </p> -->
+            >Creative Director</span> -->
+        </p>
       </section>
-      <section class="instagram-posts mt-5">
-        <div class="py-3">
+      <section class="instagram-posts mt-5 pt-5">
+        <div class="pt-5 pb-3">
           <h2 class="text-center">Follow Me On Instagram</h2>
           <p class="small fw-bold text-center text-dark">Follow Me!</p>
         </div>
@@ -732,7 +747,7 @@
         <a href="#" class="text-decoration-none text-light">Contact</a>
       </div>
 
-      <div class="d-flex align-items-center" id="footer-social">
+      <div class="d-flex flex-column align-items-center" id="footer-social">
         <ul class="list-unstyled d-flex gap-2 align-items-center">
           <li>
             <a
@@ -756,6 +771,24 @@
             ></a>
           </li>
         </ul>
+        <div class="d-flex mt-5 align-items-center justify-content-center">
+          <p class="text-light fw-lighter mb-0">Language:</p>
+          <ul class="list-unstyled d-flex gap-2 align-items-center mb-0">
+            <li>
+              <a href="#" class="flag-country d-flex">
+                <img src="img/vecteezy_india-flag-vector_.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flag-country d-flex">
+                <img
+                  src="img/Vector_illustration_of_the_flag_of_the_Netherlands_generated.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="w-100">
         <hr class="border-top border-light opacity-25 w-100" />
