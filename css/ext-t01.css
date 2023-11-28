@@ -79,14 +79,16 @@ figure.effect-bubba figcaption:after {
 }
 
 figure.effect-bubba p.icon-links {
-  padding-top: 40%;
+  /* padding-top: 40%; */
   font-size: 15px;
   line-height: 16px;
   opacity: 0;
   -webkit-transition: opacity .35s,-webkit-transform .35s;
   transition: opacity .35s,transform .35s;
   -webkit-transform: translate3d(0,-20px,0);
-  transform: translate3d(0,-20px,0)
+  transform: translate3d(0,-20px,0);
+  margin-top: 5%;
+  margin-bottom: 2px;
 }
 
 figure.effect-bubba p.description {
@@ -189,6 +191,10 @@ figure.effect-bubba p.icon-links span:before {
 }
 
 .imgs_wrapper figure figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 0;
   color: #fff;
   -webkit-backface-visibility: hidden;
@@ -3594,7 +3600,7 @@ textarea,input[type=text],input[type=password],input[type=datetime],input[type=d
 }
 
 .sidebar .instagram figure.effect-bubba p.icon-links {
-  padding-top: 30%
+  /* padding-top: 30% */
 }
 
 .sidebar .instagram-follow-btn {
