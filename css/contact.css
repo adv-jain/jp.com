@@ -1,0 +1,29 @@
+nav {
+  background-color: var(--black);
+}
+#bc-banner {
+  background-image: url(https://backpacktraveler.qodeinteractive.com/wp-content/uploads/2018/08/Contact-img-1.jpg);
+}
+
+#contact-form input,
+#contact-form textarea {
+  border: 1px solid #c6c6c6;
+  color: var(--white);
+}
+#h2-contact {
+  letter-spacing: 0.2em;
+}
+
+#c-mi-wrapper {
+  /* background: url(../img/insta/399742377_17886629372950503_1225823373204815677_n.jpg); */
+}
+#c-mi-wrapper :first-child {
+  max-width: 400px;
+}
+#c-mi-wrapper :nth-child(2) {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  top: 199px;
+  left: 199px;
+}

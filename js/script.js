@@ -1,4 +1,4 @@
-let nav = document.querySelector("nav");
+let nav = document.querySelector("#main-nav-js");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 776) {
@@ -142,3 +142,5 @@ new TypeIt("#blog-typeit", {
   .delete(1)
   .pause(70)
   .go();
+
+
