@@ -124,10 +124,12 @@ footer {
   height: 330px;
   object-fit: cover;
 }
-#latest-blog .swiper-slide .stretched-link-img {
+#latest-blog .swiper-slide .stretched-link-img,
+#pg-blog-wrapper img {
   transition: all 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
-#latest-blog .stretched-link:hover .stretched-link-img {
+#latest-blog .stretched-link:hover .stretched-link-img,
+#pg-blog-wrapper .stretched-link:hover .stretched-link-img {
   transform: scale(1.06);
 }
 
@@ -177,7 +179,8 @@ footer a i {
   color: #fff;
 }
 
-#footer-nav a:hover, #footer-social a:hover i {
+#footer-nav a:hover,
+#footer-social a:hover i {
   color: var(--hightlight) !important;
 }
 /* #footer-social a:hover i {
@@ -276,10 +279,58 @@ header > video {
   margin-right: 10px;
 }
 
-#contact-form input::placeholder
-, #contact-form textarea::placeholder 
-{
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
   color: #949494;
   font-size: 14px;
   font-style: italic;
+}
+
+.pg-h-banner-common {
+  padding-block: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bc-banner-blog {
+  background-image: url(https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/02/image00003-e1676016101140.jpeg?fit=1922%2C1158&ssl=1);
+}
+
+#pg-blog-wrapper .section-title {
+  display: flex;
+  /* align-items: center; */
+  gap: 8px;
+  text-wrap: nowrap;
+}
+
+#pg-blog-wrapper .section-title::before {
+  content: "";
+  width: 35px;
+  height: 2px;
+  background-color: var(--black);
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+  top: 9px;
+}
+
+#pg-blog-wrapper > div > div:first-child a + div {
+  position: relative;
+  margin-left: 50px;
+}
+.pg-blog-item .fa-solid.fa-circle {
+  font-size: 3px;
+}
+.pg-blog-item {
+  font-size: 10px;
+}
+
+#pg-blog-wrapper > :nth-child(even) img {
+  height: 350px !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+#latest-blog .stretched-link:hover .stretched-link-img {
+  transform: scale(1.06);
 }
