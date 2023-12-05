@@ -334,3 +334,8 @@ header > video {
 #latest-blog .stretched-link:hover .stretched-link-img {
   transform: scale(1.06);
 }
+
+/* #pg-blog-wrapper .section-title:hover {
+  color: var(--hightlight);
+  transition: all 0.5s;
+} */

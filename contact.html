@@ -43,7 +43,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <!-- <script src="js/script.js" defer></script> -->
-    <script src="js/contact.js" defer></script>
+    <script src="js/script.js" defer></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -197,8 +197,21 @@
               id="contact-form"
             >
               <input type="text" placeholder="Name" name="" id="" class="p-2" />
-              <input type="email" placeholder="Email Address" name="" id="" class="p-2" />
-              <textarea placeholder="Your Message.." name="" id="" cols="40" rows="8" class="p-2"></textarea>
+              <input
+                type="email"
+                placeholder="Email Address"
+                name=""
+                id=""
+                class="p-2"
+              />
+              <textarea
+                placeholder="Your Message.."
+                name=""
+                id=""
+                cols="40"
+                rows="8"
+                class="p-2"
+              ></textarea>
               <div>
                 <button
                   type="submit"
@@ -274,5 +287,19 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      let cImg = document.querySelector("#c-mi-img");
+
+      function cMoveImg() {
+        let curScroll = window.scrollY; // Get scroll position of the document
+        console.log(curScroll);
+        cImg.style.top = curScroll / 4 + "px"; // Update image position based on scroll position (divided by 4 for a smoother effect)
+      }
+
+      window.addEventListener("scroll", () => {
+        cMoveImg(); // Call cMoveImg on every scroll event
+      });
+    </script>
   </body>
 </html>

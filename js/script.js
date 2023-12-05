@@ -1,19 +1,4 @@
-let nav = document.querySelector("#main-nav-js");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= 776) {
-    nav.classList.add("position-fixed");
-    // nav.classList.add("top-0");
-    nav.style.backgroundColor = "var(--black)";
-  } else if (window.scrollY < 776) {
-    nav.classList.remove("position-fixed");
-    // nav.classList.remove("top-0");
-    nav.style.backgroundColor = "unset";
-  }
-});
-
 var cursor = new MouseFollower();
-
 // Get all elements with the class .insta-trigger
 var instaTriggers = document.querySelectorAll(".insta-trigger");
 
@@ -24,7 +9,7 @@ instaTriggers.forEach(function (trigger) {
 
     if (spanElement) {
       spanElement.classList.remove("visually-hidden");
-      spanElement.classList.add("your-class-name"); // Replace "your-class-name" with the actual class you want to add
+      // spanElement.classList.add("your-class-name"); // Replace "your-class-name" with the actual class you want to add
     }
   });
 
@@ -33,7 +18,7 @@ instaTriggers.forEach(function (trigger) {
 
     if (spanElement) {
       spanElement.classList.add("visually-hidden");
-      spanElement.classList.remove("your-class-name"); // Replace "your-class-name" with the actual class you want to remove
+      // spanElement.classList.remove("your-class-name"); // Replace "your-class-name" with the actual class you want to remove
     }
   });
 });
@@ -92,55 +77,54 @@ const swiper = new Swiper(".swiper", {
 
 // typing animation
 
-new TypeIt("#type_write", {
-  lifeLike: false,
-  breakLines: false,
-  loop: true,
-  speed: 0,
-})
-  .type("c")
-  .pause(150)
-  .type("h")
-  .pause(150)
-  .type("a")
-  .pause(150)
-  .type("o")
-  .pause(150)
-  .type("s")
-  .pause(150)
-  .delete(1)
-  .pause(70)
-  .delete(1)
-  .pause(70)
-  .delete(1)
-  .pause(70)
-  .delete(1)
-  .pause(70)
-  .delete(1)
-  .go();
+// new TypeIt("#type_write", {
+//   lifeLike: false,
+//   breakLines: false,
+//   loop: true,
+//   speed: 0,
+// })
+//   .type("c")
+//   .pause(150)
+//   .type("h")
+//   .pause(150)
+//   .type("a")
+//   .pause(150)
+//   .type("o")
+//   .pause(150)
+//   .type("s")
+//   .pause(150)
+//   .delete(1)
+//   .pause(70)
+//   .delete(1)
+//   .pause(70)
+//   .delete(1)
+//   .pause(70)
+//   .delete(1)
+//   .pause(70)
+//   .delete(1)
+//   .go();
 
-new TypeIt("#blog-typeit", {
-  lifeLike: false,
-  breakLines: false,
-  loop: true,
-  speed: 0,
-})
-  .type("B")
-  .pause(150)
-  .type("l")
-  .pause(150)
-  .type("o")
-  .pause(150)
-  .type("g")
-  .pause(150)
-  .delete(1)
-  .pause(70)
-  .delete(1)
-  .pause(70)
-  .delete(1)
-  .pause(70)
-  .delete(1)
-  .pause(70)
-  .go();
-
+// new TypeIt("#blog-typeit", {
+//   lifeLike: false,
+//   breakLines: false,
+//   loop: true,
+//   speed: 0,
+// })
+//   .type("B")
+//   .pause(150)
+//   .type("l")
+//   .pause(150)
+//   .type("o")
+//   .pause(150)
+//   .type("g")
+//   .pause(150)
+//   .delete(1)
+//   .pause(70)
+//   .delete(1)
+//   .pause(70)
+//   .delete(1)
+//   .pause(70)
+//   .delete(1)
+//   .pause(70)
+//   .go();
 

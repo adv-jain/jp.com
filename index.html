@@ -789,5 +789,22 @@
         </p>
       </div>
     </footer>
+    <script>
+      window.onload = function () {
+        let nav = document.querySelector(".main-nav-js");
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY >= 776) {
+            nav.classList.add("position-fixed");
+            // nav.classList.add("top-0");
+            nav.style.backgroundColor = "var(--black)";
+          } else if (window.scrollY < 776) {
+            nav.classList.remove("position-fixed");
+            // nav.classList.remove("top-0");
+            nav.style.backgroundColor = "unset";
+          }
+        });
+      };
+    </script>
   </body>
 </html>
