@@ -2,7 +2,8 @@ nav {
   background-color: var(--black);
 }
 #bc-banner {
-  background-image: url(https://backpacktraveler.qodeinteractive.com/wp-content/uploads/2018/08/Contact-img-1.jpg);
+  background: url(../img/image00009\ copy.jpg);
+  background-position: center;
 }
 
 #contact-form input,
@@ -18,12 +19,31 @@ nav {
   /* background: url(../img/insta/399742377_17886629372950503_1225823373204815677_n.jpg); */
 }
 #c-mi-wrapper :first-child {
-  max-width: 400px;
+  max-width: 500px;
 }
 #c-mi-wrapper :nth-child(2) {
-  max-width: 250px;
+  max-width: 300px;
   width: 100%;
   height: auto;
   top: 199px;
-  left: 199px;
+  left: 249px;
+}
+
+/* #c-mi-wrapper :first-child {
+  min-width: 95%;
+  max-width: 436px;
+} */
+
+@media (max-width: 1200px) {
+  #c-mi-wrapper :first-child {
+    max-width: 90%;
+  }
+
+  #c-mi-wrapper :nth-child(2) {
+    top: 0;
+    left: 0;
+  }
+  #contact-pg-wrapper .col:first-child {
+    height: 43em;
+  }
 }

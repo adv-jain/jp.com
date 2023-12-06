@@ -75,7 +75,7 @@
         data-bs-theme="dark"
       >
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="img/JP-logo_horizontal_white.png" alt="" />
           </a>
           <button
@@ -92,7 +92,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link fw-bold" aria-current="page" href="#"
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="mystory.html"
                   >My Story</a
                 >
               </li>
@@ -111,7 +114,9 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#">Beyond The Saree</a>
+                    <a class="dropdown-item" href="beyond-the-saree.html"
+                      >Beyond The Saree</a
+                    >
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
@@ -740,10 +745,14 @@
         alt=""
       />
       <div class="d-flex gap-4" id="footer-nav">
-        <a href="#" class="text-decoration-none text-light">My Story</a>
+        <a href="mystory.html" class="text-decoration-none text-light"
+          >My Story</a
+        >
         <a href="blog.html" class="text-decoration-none text-light">Blogs</a>
         <a href="#" class="text-decoration-none text-light">Gallery</a>
-        <a href="#" class="text-decoration-none text-light">Contact</a>
+        <a href="contact.html" class="text-decoration-none text-light"
+          >Contact</a
+        >
       </div>
 
       <div class="d-flex flex-column align-items-center" id="footer-social">
@@ -796,11 +805,9 @@
         window.addEventListener("scroll", () => {
           if (window.scrollY >= 776) {
             nav.classList.add("position-fixed");
-            // nav.classList.add("top-0");
             nav.style.backgroundColor = "var(--black)";
           } else if (window.scrollY < 776) {
             nav.classList.remove("position-fixed");
-            // nav.classList.remove("top-0");
             nav.style.backgroundColor = "unset";
           }
         });
@@ -814,7 +821,6 @@
 
           if (spanElement) {
             spanElement.classList.remove("visually-hidden");
-            // spanElement.classList.add("your-class-name"); // Replace "your-class-name" with the actual class you want to add
           }
         });
 
@@ -823,12 +829,11 @@
 
           if (spanElement) {
             spanElement.classList.add("visually-hidden");
-            // spanElement.classList.remove("your-class-name"); // Replace "your-class-name" with the actual class you want to remove
           }
         });
       });
 
-      const swiper = new Swiper("latest-blog .swiper", {
+      const swiper = new Swiper("#latest-blog", {
         direction: "horizontal",
         loop: true,
         autoplay: {
@@ -842,7 +847,7 @@
             spaceBetween: 10,
           },
           640: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           1024: {
