@@ -805,6 +805,62 @@
           }
         });
       };
+
+      var instaTriggers = document.querySelectorAll(".insta-trigger");
+
+      instaTriggers.forEach(function (trigger) {
+        trigger.addEventListener("mouseover", function (e) {
+          var spanElement = e.target.querySelector("span");
+
+          if (spanElement) {
+            spanElement.classList.remove("visually-hidden");
+            // spanElement.classList.add("your-class-name"); // Replace "your-class-name" with the actual class you want to add
+          }
+        });
+
+        trigger.addEventListener("mouseleave", function () {
+          var spanElement = trigger.querySelector("span");
+
+          if (spanElement) {
+            spanElement.classList.add("visually-hidden");
+            // spanElement.classList.remove("your-class-name"); // Replace "your-class-name" with the actual class you want to remove
+          }
+        });
+      });
+
+      const swiper = new Swiper("latest-blog .swiper", {
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        spaceBetween: 30,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
   </body>
 </html>

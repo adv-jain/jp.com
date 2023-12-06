@@ -339,3 +339,23 @@ header > video {
   color: var(--hightlight);
   transition: all 0.5s;
 } */
+
+.blog-cat-title {
+  font-size: 10px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.blog-h-common img {
+  max-width: 30px;
+}
+
+#blog-h-slider .swiper-slide {
+  width: 100%;
+}
+#blog-h-slider img {
+  /* max-height: 600px;
+  height: 100%;
+  object-fit: cover; */
+  /* min-width: 100%; */
+}
