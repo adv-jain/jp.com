@@ -22,6 +22,8 @@ nav {
   /* height: calc; */
   /* max-height: 500px; */
   height: 450px;
+  filter: opacity(0.4);
+  top: 20px;
 }
 #c-mi-wrapper :nth-child(2) {
   max-width: 300px;
@@ -31,7 +33,7 @@ nav {
   left: 249px;
   object-fit: cover;
   object-position: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 /* #c-mi-wrapper :first-child {

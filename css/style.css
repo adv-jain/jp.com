@@ -11,6 +11,11 @@
   --tertiary:; */
 }
 
+* {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
 body {
   font-family: "Libre Bodoni", serif !important;
 }
@@ -299,6 +304,13 @@ header > video {
 #bc-banner-blog {
   background-image: url(../img/Jolene-Prins-Hero-blog.webp);
   background-position: center;
+  padding: 200px 0;
+}
+#bc-banner-blog-btws {
+  /* background-image: url(../img/3.jpg); */
+  background-image: url(../img/banner-btws.webp);
+  background-position: center;
+  padding: 200px 0;
 }
 
 /* #pg-blog-wrapper .section-title {
@@ -394,7 +406,7 @@ blockquote {
   display: inline-block;
   margin: auto;
   letter-spacing: 2px;
-  color: #be9656;
+  color: var(--hightlight);
   transition: all 0.5s;
 }
 
@@ -402,19 +414,21 @@ blockquote {
   color: var(--black);
 }
 
-.post_info_date span {
+.post_info_date {
   display: inline-block;
-  padding: 0 1.2em;
+  /* padding: 0 1em; */
   background: #fff;
   position: relative;
   z-index: 2;
+  font-size: 13px;
+  font-style: italic;
 }
 
 .pg-blog-item span::before {
   content: "";
   background: var(--hightlight);
   width: 35px;
-  height: 1px;
+  height: 0.8px;
   position: absolute;
   right: 120%;
   top: 50%;
@@ -424,10 +438,83 @@ blockquote {
   content: "";
   background: var(--hightlight);
   width: 35px;
-  height: 1px;
+  height: 0.8px;
   position: absolute;
   left: 120%;
   top: 50%;
   z-index: 0;
 }
 
+.post_featured-img {
+  height: 240px;
+  object-fit: cover;
+  width: 100%;
+}
+
+nav .dropdown-item.active,
+.dropdown-item:active {
+  background-color: unset !important;
+}
+::selection {
+  background-color: var(--hightlight) !important;
+}
+
+/* gallery */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery {
+  column-count: 3;
+  --webkit-column-count: 3;
+  --moz-column-count: 3;
+  gap: 1rem;
+  /* padding: 4rem; */
+}
+
+.image {
+  margin-bottom: 1rem;
+}
+
+.image img {
+  height: auto;
+  width: 100%;
+}
+
+/* Responsive-ness for different screen-sizes */
+@media screen and (max-width: 810px) {
+  .gallery {
+    column-count: 3;
+    --webkit-column-count: 3;
+    --moz-column-count: 3;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery {
+    column-count: 2;
+    --webkit-column-count: 2;
+    --moz-column-count: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gallery {
+    column-count: 1;
+    --webkit-column-count: 1;
+    --moz-column-count: 1;
+  }
+}
+
+/* gallery */
+
+/* gallery */
+
+
+#mystory-header-img {
+  object-position: top;
+}
