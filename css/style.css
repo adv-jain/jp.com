@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Frank Ruhl Libre", serif !important;
+  font-family: "Libre Bodoni", serif !important;
 }
 
 h1,
@@ -29,12 +29,12 @@ h6,
   height: 75px;
 }
 
-.section-title {
+/* .section-title {
   letter-spacing: 2px;
   color: black;
   font-size: 0.9rem;
   text-transform: uppercase;
-}
+} */
 /* .swiper-post-date {
   color: #8F9092;
 } */
@@ -271,6 +271,10 @@ header > video {
   z-index: 9999;
 }
 
+#wrapper-minus-top #mystory-h-author-img {
+  width: 30px;
+}
+
 .blog-author-img {
   width: 30px;
   height: 30px;
@@ -287,23 +291,24 @@ header > video {
 }
 
 .pg-h-banner-common {
-  padding-block: 100px;
+  padding-block: 150px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #bc-banner-blog {
-  background-image: url(https://i0.wp.com/joleneprins.com/wp-content/uploads/2023/02/image00003-e1676016101140.jpeg?fit=1922%2C1158&ssl=1);
+  background-image: url(../img/Jolene-Prins-Hero-blog.webp);
+  background-position: center;
 }
 
-#pg-blog-wrapper .section-title {
+/* #pg-blog-wrapper .section-title {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   gap: 8px;
   text-wrap: nowrap;
-}
+} */
 
-#pg-blog-wrapper .section-title::before {
+/* #pg-blog-wrapper .section-title::before {
   content: "";
   width: 35px;
   height: 2px;
@@ -312,11 +317,11 @@ header > video {
   position: absolute;
   left: -50px;
   top: 9px;
-}
+} */
 
 #pg-blog-wrapper > div > div:first-child a + div {
   position: relative;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .pg-blog-item .fa-solid.fa-circle {
   font-size: 3px;
@@ -325,11 +330,11 @@ header > video {
   font-size: 10px;
 }
 
-#pg-blog-wrapper > :nth-child(even) img {
+/* #pg-blog-wrapper > :nth-child(even) img {
   height: 350px !important;
   object-fit: cover;
   object-position: center;
-}
+} */
 
 #latest-blog .stretched-link:hover .stretched-link-img {
   transform: scale(1.06);
@@ -343,7 +348,11 @@ header > video {
 .blog-cat-title {
   font-size: 10px;
   font-weight: bold;
-  color: white !important;
+  /* color: white !important; */
+  background-color: var(--hightlight) !important;
+}
+blockquote {
+  border-left-color: var(--hightlight) !important;
 }
 
 .blog-h-common img {
@@ -359,3 +368,66 @@ header > video {
   object-fit: cover; */
   /* min-width: 100%; */
 }
+
+.mystory-article article,
+#article-cat-below {
+  max-width: 630px;
+  margin-inline: auto;
+}
+#footer-author-img {
+  width: 120px;
+}
+
+.mystory-author-block {
+  background-color: var(--hightlight-secondary);
+}
+
+.to-blogs-links,
+.pg-blog-item {
+  color: var(--hightlight);
+}
+
+.readmore {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: auto;
+  letter-spacing: 2px;
+  color: #be9656;
+  transition: all 0.5s;
+}
+
+.readmore:hover {
+  color: var(--black);
+}
+
+.post_info_date span {
+  display: inline-block;
+  padding: 0 1.2em;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.pg-blog-item span::before {
+  content: "";
+  background: var(--hightlight);
+  width: 35px;
+  height: 1px;
+  position: absolute;
+  right: 120%;
+  top: 50%;
+  z-index: 0;
+}
+.pg-blog-item span::after {
+  content: "";
+  background: var(--hightlight);
+  width: 35px;
+  height: 1px;
+  position: absolute;
+  left: 120%;
+  top: 50%;
+  z-index: 0;
+}
+

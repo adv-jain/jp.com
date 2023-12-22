@@ -9,7 +9,6 @@ nav {
 #contact-form input,
 #contact-form textarea {
   border: 1px solid #c6c6c6;
-  color: var(--white);
 }
 #h2-contact {
   letter-spacing: 0.2em;
@@ -20,13 +19,19 @@ nav {
 }
 #c-mi-wrapper :first-child {
   max-width: 500px;
+  /* height: calc; */
+  /* max-height: 500px; */
+  height: 450px;
 }
 #c-mi-wrapper :nth-child(2) {
   max-width: 300px;
   width: 100%;
-  height: auto;
-  top: 199px;
+  height: 400px;
+  /* top: -20px; */
   left: 249px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* #c-mi-wrapper :first-child {
